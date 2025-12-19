@@ -11,32 +11,32 @@ const images = [
        3. Copy link di browser (biasanya diawali raw.githubusercontent.com).
        4. Tempel di bagian 'src' di bawah ini.
     */
-    src: "./Images/SANUR1.jpg", 
+    src: "../Images/SANUR1.jpg", 
     alt: "Kegiatan Belajar di Kelas",
     caption: "Suasana Belajar Kondusif"
   },
   { 
-    src: "./Images/SANUR2.jpg", 
+    src: "../Images/SANUR2.jpg", 
     alt: "Presentasi Materi",
     caption: "Pendalaman Materi"
   },
   { 
-    src: "./Images/SANUR3.jpg", 
+    src: "../Images/SANUR3.jpg", 
     alt: "Mentoring Personal",
     caption: "Pendampingan Intensif"
   },
   { 
-    src: "./Images/SANUR6.jpg", 
+    src: "../Images/SANUR6.jpg", 
     alt: "Diskusi Kelompok",
     caption: "Kolaborasi Tim"
   },
   { 
-    src: "./Images/SANUR5.jpg", 
+    src: "../Images/SANUR5.jpg", 
     alt: "Webinar Pelatihan Komputer",
     caption: "Digital Skills Webinar"
   },
   { 
-    src: "./Images/SANUR4.jpg", 
+    src: "../Images/SANUR4.jpg", 
     alt: "Sesi Diskusi",
     caption: "Sharing Session"
   },
