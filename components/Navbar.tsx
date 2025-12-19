@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
              */}
              <div className="relative transition-all duration-300 flex items-center justify-center overflow-hidden rounded-xl bg-white border border-gray-50 shadow-sm h-10 w-[76px] md:h-14 md:w-[106px]">
                 <img 
-                  src="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" 
+                  src="/Images/sanurlogo.png" 
                   alt="Logo SANUR" 
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-1"
                   onError={(e) => {
