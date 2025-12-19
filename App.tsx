@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -49,7 +49,7 @@ const HomePage = () => (
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="min-h-screen bg-gray-50 text-gray-800 font-sans selection:bg-primary selection:text-white overflow-x-hidden flex flex-col justify-between">
         <ScrollToTop />
         <PageMeta />
