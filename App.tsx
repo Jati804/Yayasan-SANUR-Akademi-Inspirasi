@@ -68,7 +68,7 @@ const App: React.FC = () => {
         <Footer />
         <WhatsAppFloat />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
