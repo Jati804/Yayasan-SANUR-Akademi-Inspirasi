@@ -11,32 +11,32 @@ const images = [
        3. Copy link di browser (biasanya diawali raw.githubusercontent.com).
        4. Tempel di bagian 'src' di bawah ini.
     */
-    src: "https://github.com/Jati804/Yayasan-SANUR-Akademi-Inspirasi/blob/7047d2e52436f677e20db7a4cc11a91350f48e80/Images/SANUR1.jpg", 
+    src: "./images/SANUR1.jpg", 
     alt: "Kegiatan Belajar di Kelas",
     caption: "Suasana Belajar Kondusif"
   },
   { 
-    src: "https://github.com/Jati804/Yayasan-SANUR-Akademi-Inspirasi/blob/7047d2e52436f677e20db7a4cc11a91350f48e80/Images/SANUR2.jpg", 
+    src: "./images/SANUR2.jpg", 
     alt: "Presentasi Materi",
     caption: "Pendalaman Materi"
   },
   { 
-    src: "https://github.com/Jati804/Yayasan-SANUR-Akademi-Inspirasi/blob/7047d2e52436f677e20db7a4cc11a91350f48e80/Images/SANUR3.jpg", 
+    src: "./images/SANUR3.jpg", 
     alt: "Mentoring Personal",
     caption: "Pendampingan Intensif"
   },
   { 
-    src: "https://github.com/Jati804/Yayasan-SANUR-Akademi-Inspirasi/blob/7047d2e52436f677e20db7a4cc11a91350f48e80/Images/SANUR6.jpg", 
+    src: "./images/SANUR6.jpg", 
     alt: "Diskusi Kelompok",
     caption: "Kolaborasi Tim"
   },
   { 
-    src: "https://github.com/Jati804/Yayasan-SANUR-Akademi-Inspirasi/blob/7047d2e52436f677e20db7a4cc11a91350f48e80/Images/SANUR5.jpg", 
+    src: "./images/SANUR5.jpg", 
     alt: "Webinar Pelatihan Komputer",
     caption: "Digital Skills Webinar"
   },
   { 
-    src: "https://github.com/Jati804/Yayasan-SANUR-Akademi-Inspirasi/blob/7047d2e52436f677e20db7a4cc11a91350f48e80/Images/SANUR4.jpg", 
+    src: "./images/SANUR4.jpg", 
     alt: "Sesi Diskusi",
     caption: "Sharing Session"
   },
