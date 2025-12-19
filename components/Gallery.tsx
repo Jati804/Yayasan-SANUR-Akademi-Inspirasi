@@ -37,8 +37,8 @@ const images = [
   },
   { 
     src: "/Images/SANUR5.jpg", 
-    alt: "Webinar Pelatihan Komputer",
-    caption: "Digital Skills Webinar"
+    alt: "Seminar Pelatihan Komputer",
+    caption: "Digital Skills Seminar"
   },
   { 
     src: "/Images/SANUR4.jpg", 
