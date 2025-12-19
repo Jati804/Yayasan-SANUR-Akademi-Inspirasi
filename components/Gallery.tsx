@@ -16,32 +16,32 @@ const images = [
        3. Copy link di browser (biasanya diawali raw.githubusercontent.com).
        4. Tempel di bagian 'src' di bawah ini.
     */
-    src: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1000&auto=format&fit=crop", 
+    src: "/Images/SANUR1.jpg", 
     alt: "Kegiatan Belajar di Kelas",
     caption: "Suasana Belajar Kondusif"
   },
   { 
-    src: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1000&auto=format&fit=crop", 
+    src: "/Images/SANUR2.jpg", 
     alt: "Presentasi Materi",
     caption: "Pendalaman Pembelajaran"
   },
   { 
-    src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop", 
+    src: "/Images/SANUR3.jpg", 
     alt: "Mentoring Personal",
     caption: "Pendampingan Intensif"
   },
   { 
-    src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop", 
+    src: "/Images/SANUR6.jpg", 
     alt: "Diskusi Kelompok",
     caption: "Kolaborasi Tim"
   },
   { 
-    src: "https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=1000&auto=format&fit=crop", 
+    src: "/Images/SANUR5.jpg", 
     alt: "Webinar Pelatihan Komputer",
     caption: "Digital Skills Webinar"
   },
   { 
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop", 
+    src: "/Images/SANUR4.jpg", 
     alt: "Sesi Diskusi",
     caption: "Sharing Session"
   },
