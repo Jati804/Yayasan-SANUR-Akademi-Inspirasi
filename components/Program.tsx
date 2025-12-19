@@ -121,7 +121,7 @@ const Program: React.FC = () => {
                     </div>
                     <h2 className="font-heading font-black text-2xl md:text-3xl text-primary-dark mb-6">Rancangan Kurikulum</h2>
                     <div className="space-y-6 text-slate-700 leading-relaxed text-lg">
-                        <p>Menggunakan <span className="font-bold text-primary">Kurikulum Berbasis Kompetensi (KBK)</span>. Evaluasi dilakukan tiap 5 pertemuan.</p>
+                        <p>Menggunakan <span className="font-bold text-primary">Kurikulum Berbasis Kompetensi (KBK)</span>. Evaluasi dilakukan pada setiap 6 kali pertemuan.</p>
                         <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-sm my-6 inline-block w-full md:w-auto">
                             <p className="font-bold text-gray-800">🎯 Parameter Kompetensi:</p>
                             <p className="text-gray-600 mt-2">Nilai minimal 80.</p>
