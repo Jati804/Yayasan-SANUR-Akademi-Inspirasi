@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
              {/* Ukuran logo dibuat tetap (w-12 di mobile, w-16 di desktop) tanpa animasi mengecil */}
              <div className="relative transition-all duration-300 flex items-center justify-center overflow-hidden rounded-xl bg-white border border-gray-50 shadow-sm w-12 h-12 md:w-16 md:h-16">
                 <img 
-                  src="https://github.com/Jati804/Yayasan-SANUR-Akademi-Inspirasi/blob/7047d2e52436f677e20db7a4cc11a91350f48e80/Images/sanurlogo.png" 
+                  src="./images/sanurlogo.png" 
                   alt="Logo SANUR" 
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300 p-1"
                   onError={(e) => {
