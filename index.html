@@ -1,9 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
     
+    <!-- URL Cleanup Script: Mengatasi masalah /?/ dari sistem SPA lama -->
+    <script>
+      (function() {
+        var l = window.location;
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&') 
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }());
+    </script>
+
     <!-- Primary Meta Tags -->
     <title>SANUR Akademi Inspirasi | Lembaga Kursus & Pelatihan Inklusif</title>
     <meta name="title" content="SANUR Akademi Inspirasi | Lembaga Kursus & Pelatihan Inklusif">
@@ -81,7 +98,6 @@
 </head>
   <body>
     <div id="root"></div>
-    <!-- WAJIB: Script utama untuk memanggil aplikasi React -->
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
