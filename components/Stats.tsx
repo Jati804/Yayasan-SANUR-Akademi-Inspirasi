@@ -53,7 +53,7 @@ const Stats: React.FC = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10 gap-8 md:gap-0">
             <StatItem number={4} suffix="+" label="Program Unggulan" delay={0} />
-            <StatItem number={5} suffix=" / Sesi" label="Peserta Maksimal" delay={0.2} />
+            <StatItem number={5} suffix=" / Kelas" label="Peserta Maksimal" delay={0.2} />
             <StatItem number={100} suffix="%" label="Pendampingan Intensif" delay={0.4} />
           </div>
         </div>
