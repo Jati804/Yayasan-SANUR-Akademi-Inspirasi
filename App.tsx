@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -26,6 +26,7 @@ const PageMeta = () => {
   useEffect(() => {
     let title = "SANUR Akademi Inspirasi | Lembaga Kursus & Pelatihan Inklusif";
     switch (pathname) {
+      case '/': break;
       case '/tentang': title = "Tentang Kami | SANUR Akademi"; break;
       case '/program': title = "Program & Biaya | SANUR Akademi"; break;
       case '/daftar': title = "Pendaftaran | SANUR Akademi"; break;
@@ -48,7 +49,7 @@ const HomePage = () => (
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <HashRouter>
       <div className="min-h-screen bg-gray-50 text-gray-800 font-sans selection:bg-primary selection:text-white overflow-x-hidden flex flex-col justify-between">
         <ScrollToTop />
         <PageMeta />
@@ -67,7 +68,7 @@ const App: React.FC = () => {
         <Footer />
         <WhatsAppFloat />
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
