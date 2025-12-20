@@ -2,22 +2,18 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    // RULE 1: Izinkan Vercel mengakses semua file statis (CSS/JS) di folder /assets/
     {
       "source": "/assets/(.*)",
       "destination": "/assets/$1"
     },
-    // RULE 2: Izinkan akses langsung ke sitemap.xml
     {
       "source": "/sitemap.xml",
       "destination": "/sitemap.xml"
     },
-    // RULE 3: Izinkan akses langsung ke robots.txt
     {
       "source": "/robots.txt",
       "destination": "/robots.txt"
     },
-    // RULE 4: FALLBACK - Arahkan SEMUA path URL lainnya ke index.html untuk BrowserRouter
     {
       "source": "/(.*)",
       "destination": "/index.html"
