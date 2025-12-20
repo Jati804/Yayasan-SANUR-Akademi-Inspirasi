@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-        {/* Desktop Nav - Tetap Sempurna */}
+        {/* Desktop Nav - Tetap Sempurna seperti permintaan Anda */}
         <nav className="hidden lg:flex items-center gap-10">
           <ul className="flex space-x-8">
             {navLinks.map((link) => (
@@ -75,23 +75,23 @@ const Navbar: React.FC = () => {
           </Link>
         </nav>
 
-        {/* Mobile Menu Button - Sekarang Warna Oranye (Secondary) */}
+        {/* Mobile Menu Button - Dibuat Oranye Solid agar Sangat Menonjol */}
         <button 
-          className={`lg:hidden flex items-center gap-2 px-4 py-2 rounded-2xl border transition-all focus:outline-none ${
+          className={`lg:hidden flex items-center gap-2 px-4 py-2 rounded-2xl border-none transition-all duration-300 focus:outline-none shadow-lg active:scale-95 ${
             isOpen 
-            ? 'bg-secondary text-white border-secondary shadow-lg shadow-secondary/20' 
-            : 'bg-orange-50 hover:bg-orange-100 text-secondary border-secondary/20'
+            ? 'bg-primary text-white shadow-primary/20' 
+            : 'bg-secondary text-white shadow-secondary/30 hover:bg-secondary-dark'
           }`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span className={`text-[10px] font-black tracking-[0.2em] uppercase ${isOpen ? 'text-white' : 'text-secondary/70'}`}>
+          <span className="text-[10px] font-black tracking-[0.2em] uppercase text-white/90">
             MENU
           </span>
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
+          {isOpen ? <X size={20} className="text-white" /> : <Menu size={20} className="text-white" />}
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown - Font dikecilkan agar lebih proporsional */}
+      {/* Mobile Menu Dropdown - Font Dikecilkan & Rapi */}
       <div 
         className={`lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
               className={`text-[11px] font-extrabold uppercase tracking-[0.2em] py-3.5 border-b border-gray-50 pl-4 border-l-4 transition-all ${
                  isActive(link.path) 
                  ? 'text-primary border-secondary bg-blue-50/50' 
-                 : 'text-gray-500 border-transparent hover:text-primary'
+                 : 'text-gray-500 border-transparent hover:text-primary hover:bg-gray-50'
               }`}
               onClick={() => setIsOpen(false)}
             >
@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
           <Link 
             to="/daftar"
             onClick={() => setIsOpen(false)}
-            className="bg-secondary text-white text-center py-4 rounded-xl font-black text-[11px] mt-2 shadow-lg shadow-secondary/20 cursor-pointer uppercase tracking-[0.25em]"
+            className="bg-secondary text-white text-center py-4 rounded-xl font-black text-[11px] mt-2 shadow-lg shadow-secondary/20 cursor-pointer uppercase tracking-[0.25em] active:scale-[0.98] transition-transform"
           >
             Daftar Sekarang
           </Link>
