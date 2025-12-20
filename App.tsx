@@ -1,6 +1,6 @@
 
 import React, { useEffect, useLayoutEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -50,7 +50,7 @@ const HomePage = () => (
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="min-h-screen bg-gray-50 text-gray-800 font-sans selection:bg-primary selection:text-white overflow-x-hidden flex flex-col justify-between">
         <ScrollToTop />
         <PageMeta />
@@ -69,7 +69,7 @@ const App: React.FC = () => {
         <Footer />
         <WhatsAppFloat />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 
