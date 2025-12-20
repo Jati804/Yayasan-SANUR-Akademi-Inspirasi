@@ -14,9 +14,8 @@
       "source": "/robots.txt",
       "destination": "/robots.txt"
     },
-    // Ini adalah aturan fallback History API Routing-nya
     {
-      "source": "/(.*)", 
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
