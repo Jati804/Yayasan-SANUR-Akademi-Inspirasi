@@ -2,7 +2,6 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    // Aturan spesifik aset
     {
       "source": "/assets/(.*)",
       "destination": "/assets/$1"
@@ -15,10 +14,9 @@
       "source": "/robots.txt",
       "destination": "/robots.txt"
     },
-    // Aturan fallback umum (History Mode)
     {
       "source": "/:path*", 
       "destination": "/index.html"
-    }
-  ]
+    } // <-- PERHATIKAN: TIDAK ADA KOMA DI SINI
+  ] // <-- PERHATIKAN: TIDAK ADA KOMA DI SINI
 }
