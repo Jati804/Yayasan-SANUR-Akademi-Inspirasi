@@ -1,4 +1,3 @@
-
 import React, { useEffect, useLayoutEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -27,7 +26,6 @@ const PageMeta = () => {
   useEffect(() => {
     let title = "SANUR Akademi Inspirasi | Lembaga Kursus & Pelatihan Inklusif";
     switch (pathname) {
-      case '/': break;
       case '/tentang': title = "Tentang Kami | SANUR Akademi"; break;
       case '/program': title = "Program & Biaya | SANUR Akademi"; break;
       case '/daftar': title = "Pendaftaran | SANUR Akademi"; break;
