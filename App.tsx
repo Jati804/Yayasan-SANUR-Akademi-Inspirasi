@@ -1,3 +1,4 @@
+
 import React, { useEffect, useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -54,7 +55,7 @@ const App: React.FC = () => {
         <ScrollToTop />
         <PageMeta />
         <Navbar />
-
+        
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
