@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -33,12 +34,7 @@ const Navbar: React.FC = () => {
         {/* Logo Area */}
         <div className="flex items-center">
           <Link to="/" className="flex items-center group">
-             {/* 
-                Logo Container Adjusted for 298x157 Ratio (~1.9:1):
-                - Mobile: h-10 (40px) -> w ≈ 76px
-                - Desktop: h-14 (56px) -> w ≈ 106px
-             */}
-             <div className="relative transition-all duration-300 flex items-center justify-center overflow-hidden rounded-xl bg-white border border-gray-50 shadow-sm h-10 w-[76px] md:h-14 md:w-[106px]">
+             <div className="relative transition-all duration-300 flex items-center justify-center overflow-hidden rounded-xl bg-white border border-gray-100 shadow-sm h-10 w-[76px] md:h-14 md:w-[106px]">
                 <img 
                   src="/Images/sanurlogo.png" 
                   alt="Logo SANUR" 
@@ -51,7 +47,7 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-        {/* Desktop Nav */}
+        {/* Desktop Nav - Tetap Sempurna */}
         <nav className="hidden lg:flex items-center gap-10">
           <ul className="flex space-x-8">
             {navLinks.map((link) => (
@@ -79,31 +75,37 @@ const Navbar: React.FC = () => {
           </Link>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Sekarang Warna Oranye (Secondary) */}
         <button 
-          className="lg:hidden flex items-center gap-2 bg-gray-50 hover:bg-gray-100 px-4 py-2 rounded-2xl border border-gray-200 text-gray-700 transition-all focus:outline-none"
+          className={`lg:hidden flex items-center gap-2 px-4 py-2 rounded-2xl border transition-all focus:outline-none ${
+            isOpen 
+            ? 'bg-secondary text-white border-secondary shadow-lg shadow-secondary/20' 
+            : 'bg-orange-50 hover:bg-orange-100 text-secondary border-secondary/20'
+          }`}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span className="text-xs font-black tracking-[0.2em] uppercase text-gray-500">MENU</span>
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          <span className={`text-[10px] font-black tracking-[0.2em] uppercase ${isOpen ? 'text-white' : 'text-secondary/70'}`}>
+            MENU
+          </span>
+          {isOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu Dropdown - Font dikecilkan agar lebih proporsional */}
       <div 
         className={`lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="container mx-auto px-4 py-8 flex flex-col gap-5">
+        <div className="container mx-auto px-4 py-6 flex flex-col gap-2">
           {navLinks.map((link) => (
             <Link 
               key={link.name}
               to={link.path} 
-              className={`text-xl font-bold py-4 border-b border-gray-50 pl-4 border-l-8 transition-all ${
+              className={`text-[11px] font-extrabold uppercase tracking-[0.2em] py-3.5 border-b border-gray-50 pl-4 border-l-4 transition-all ${
                  isActive(link.path) 
                  ? 'text-primary border-secondary bg-blue-50/50' 
-                 : 'text-gray-700 border-transparent hover:text-primary'
+                 : 'text-gray-500 border-transparent hover:text-primary'
               }`}
               onClick={() => setIsOpen(false)}
             >
@@ -113,7 +115,7 @@ const Navbar: React.FC = () => {
           <Link 
             to="/daftar"
             onClick={() => setIsOpen(false)}
-            className="bg-secondary text-white text-center py-5 rounded-2xl font-black text-xl mt-4 shadow-lg shadow-secondary/20 cursor-pointer uppercase tracking-widest"
+            className="bg-secondary text-white text-center py-4 rounded-xl font-black text-[11px] mt-2 shadow-lg shadow-secondary/20 cursor-pointer uppercase tracking-[0.25em]"
           >
             Daftar Sekarang
           </Link>
