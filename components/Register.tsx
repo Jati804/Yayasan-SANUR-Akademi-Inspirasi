@@ -1,5 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+// Fix: Import named member useLocation from react-router-dom
 import { useLocation } from 'react-router-dom';
 import { 
   MessageCircle, 
@@ -81,6 +83,14 @@ const Register: React.FC = () => {
   const [selectedProgram, setSelectedProgram] = useState<string>(state?.selectionName || "");
   const [selectedPackage, setSelectedPackage] = useState<string>(""); 
   const [price, setPrice] = useState<string>("0");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (selectedPackage === 'Semi-Private') {
@@ -131,7 +141,7 @@ const Register: React.FC = () => {
         {/* 2. FORMULIR PEMILIHAN PAKET */}
         <section className="max-w-3xl mx-auto bg-gray-50 rounded-3xl p-6 md:p-10 border border-gray-100 mb-12">
             <div className="text-center mb-8">
-                <h2 className="font-bold text-2xl md:text-3xl text-gray-800 mb-2">Estimasi Biaya & Konsultasi Pendaftaran</h2>
+                <h2 className="font-bold text-2xl md:text-3xl text-gray-800 mb-2">Estimasi Biaya & Konsultasi</h2>
                 <p className="text-gray-500 text-sm">Lengkapi formulir di bawah ini untuk melihat estimasi biaya.</p>
             </div>
 
@@ -145,9 +155,11 @@ const Register: React.FC = () => {
                     <select 
                         value={selectedProgram} 
                         onChange={(e) => setSelectedProgram(e.target.value)}
-                        className="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none font-medium text-gray-700 transition-all cursor-pointer"
+                        className="w-full p-4 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none font-medium text-gray-700 transition-all cursor-pointer text-sm md:text-base appearance-none"
                     >
-                        <option value="" disabled>-- Klik Disini Untuk Memilih Program --</option>
+                        <option value="" disabled>
+                          {isMobile ? "-- Pilih Program Pelatihan --" : "-- Klik Disini Untuk Memilih Program Pelatihan --"}
+                        </option>
                         <option value="Pelatihan Ms-Excel">Pelatihan Ms-Excel</option>
                         <option value="Pelatihan Ms-Word">Pelatihan Ms-Word</option>
                         <option value="Affiliate TikTok">Affiliate TikTok</option>
@@ -163,7 +175,7 @@ const Register: React.FC = () => {
                             <Users className="w-4 h-4 text-secondary" />
                             Jenis Kelas (Wajib Dipilih)
                         </label>
-                        <span className="text-xs text-primary bg-blue-50 px-2 py-1 rounded font-medium animate-pulse">
+                        <span className="text-[10px] md:text-xs text-primary bg-blue-50 px-2 py-1 rounded font-medium animate-pulse">
                             👇 Klik salah satu kotak di bawah
                         </span>
                     </div>
