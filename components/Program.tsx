@@ -10,7 +10,6 @@ import {
   Video, 
   Users, 
   ArrowRight,
-  BookOpen,
   Clock,
   Crown
 } from 'lucide-react';
