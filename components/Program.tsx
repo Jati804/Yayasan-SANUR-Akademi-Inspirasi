@@ -330,20 +330,20 @@ const levelConfig = {
     headerBg: "bg-gradient-to-r from-emerald-500 to-teal-500",
   },
   Intermediate: {
-    bg: "bg-blue-500",
-    light: "bg-blue-50",
-    text: "text-blue-700",
-    border: "border-blue-200",
-    badge: "bg-blue-100 text-blue-700",
-    headerBg: "bg-gradient-to-r from-blue-500 to-indigo-500",
-  },
-  Advanced: {
     bg: "bg-violet-600",
     light: "bg-violet-50",
     text: "text-violet-700",
     border: "border-violet-200",
     badge: "bg-violet-100 text-violet-700",
     headerBg: "bg-gradient-to-r from-violet-600 to-purple-600",
+  },
+  Advanced: {
+    bg: "bg-blue-500",
+    light: "bg-blue-50",
+    text: "text-blue-700",
+    border: "border-blue-200",
+    badge: "bg-blue-100 text-blue-700",
+    headerBg: "bg-gradient-to-r from-blue-500 to-indigo-500",
   },
 };
 
