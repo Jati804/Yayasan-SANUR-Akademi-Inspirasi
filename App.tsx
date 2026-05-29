@@ -9,6 +9,7 @@ import Stats from './components/Stats';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Program from './components/Program';
+import Kurikulum from './components/Kurikulum';
 import Register from './components/Register';
 import Payment from './components/Payment';
 import Footer from './components/Footer';
@@ -29,6 +30,7 @@ const PageMeta = () => {
     switch (pathname) {
       case '/': break;
       case '/tentang': title = "Tentang Kami | SANUR Akademi"; break;
+      case '/kurikulum': title = "Kurikulum | SANUR Akademi"; break;
       case '/program': title = "Program & Biaya | SANUR Akademi"; break;
       case '/daftar': title = "Pendaftaran | SANUR Akademi"; break;
       case '/pembayaran': title = "Pembayaran Kursus | SANUR Akademi"; break;
@@ -60,6 +62,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/tentang" element={<div className="pt-20"><About /></div>} />
+            <Route path="/kurikulum" element={<div className="bg-gray-50 min-h-screen"><Kurikulum /></div>} />
             <Route path="/program" element={<div className="bg-gray-50 min-h-screen"><Program /></div>} />
             <Route path="/daftar" element={<div className="bg-gray-50 min-h-screen"><Register /></div>} />
             <Route path="/pembayaran" element={<Payment />} />
