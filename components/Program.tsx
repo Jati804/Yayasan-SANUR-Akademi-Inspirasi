@@ -106,31 +106,6 @@ const Program: React.FC = () => {
            </MotionDiv>
         </div>
 
-        {/* 1. CURRICULUM SECTION */}
-        <div className="mb-24">
-            <MotionDiv 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="bg-blue-50 rounded-3xl p-8 md:p-12 border border-blue-100 relative overflow-hidden"
-            >
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/40 rounded-full blur-3xl -mr-16 -mt-16"></div>
-                <div className="relative z-10 text-center max-w-4xl mx-auto">
-                    <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary mx-auto mb-6 shadow-md">
-                        <BookOpen className="w-8 h-8" />
-                    </div>
-                    <h2 className="font-heading font-black text-2xl md:text-3xl text-primary-dark mb-6">Rancangan Kurikulum</h2>
-                    <div className="space-y-6 text-slate-700 leading-relaxed text-lg">
-                        <p>Menggunakan <span className="font-bold text-primary">Kurikulum Berbasis Kompetensi (KBK)</span>. Evaluasi dilakukan pada setiap 6 kali pertemuan.</p>
-                        <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-sm my-6 inline-block w-full md:w-auto">
-                            <p className="font-bold text-gray-800">🎯 Parameter Kompetensi:</p>
-                            <p className="text-gray-600 mt-2">Nilai minimal 80.</p>
-                        </div>
-                    </div>
-                </div>
-            </MotionDiv>
-        </div>
-
         {/* 2. PROGRAM GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {trainingPrograms.map((program, idx) => (
