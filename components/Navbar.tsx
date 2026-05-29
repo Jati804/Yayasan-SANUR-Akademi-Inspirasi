@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Beranda', path: '/' },
     { name: 'Tentang Kami', path: '/tentang' }, 
-    { name: 'Kurikulum', path: '/kurikulum' },
-    { name: 'Program & Biaya', path: '/program' },
+    { name: 'Program & Kurikulum', path: '/program' },
+    { name: 'Biaya', path: '/biaya' },
   ];
 
   return (
