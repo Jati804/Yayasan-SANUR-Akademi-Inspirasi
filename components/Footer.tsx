@@ -14,15 +14,9 @@ const Footer: React.FC = () => {
               SANUR Akademi Inspirasi
             </h3>
             <p className="text-sm text-slate-500">
-              &copy; {currentYear} Yayasan SANUR Akademi Inspirasi. All rights reserved.
+              &copy; Yayasan SANUR Akademi Inspirasi. All rights reserved.
             </p>
           </div>
-
-          {/* Updated Description */}
-          <div className="text-xs text-slate-400 font-medium">
-             Lembaga Kursus & Pelatihan Inklusif
-          </div>
-
         </div>
       </div>
     </footer>
