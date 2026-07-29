@@ -46,11 +46,11 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-bold text-lg">Jam Operasional</h4>
                     <p className="text-blue-100 font-light mt-1">
-                      Senin - Jumat: 09.00 - 15.00<br />
+                      <span className="whitespace-nowrap">Senin - Jumat: 09.00 - 15.00</span><br />
                       Sabtu: 08.00 - 14.00
                     </p>
                     <p className="text-blue-100/70 font-light text-sm mt-1 italic">
-                      Di luar jam tersebut, silakan hubungi dahulu melalui kontak yang tertera
+                      (Di luar jam tersebut, silakan hubungi dahulu melalui kontak yang tertera)
                     </p>
                   </div>
                 </div>
