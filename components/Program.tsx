@@ -452,7 +452,7 @@ const Program: React.FC = () => {
                       }`}
                     >
                       <BookOpen className="w-4 h-4" />
-                      <span className="hidden sm:inline">Kurikulum</span>
+                      <span className="hidden sm:inline">Rencana Pembelajaran</span>
                       <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeKurikulum === idx ? 'rotate-180' : ''}`} />
                     </button>
 
@@ -460,7 +460,7 @@ const Program: React.FC = () => {
                       onClick={() => handleSelectProgram(program.name)}
                       className={`group flex items-center gap-2 px-5 py-2.5 rounded-2xl font-bold text-sm text-white transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 cursor-pointer ${program.color}`}
                     >
-                      <span>Pilih Program</span>
+                      <span>Pilih</span>
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
                   </div>
