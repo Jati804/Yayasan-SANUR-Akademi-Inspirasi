@@ -56,7 +56,7 @@ const Biaya: React.FC = () => {
                 <Users className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Kelas Semi-Private</h3>
-              <p className="text-sm text-gray-400 mb-6">Belajar bersama 2–3 peserta, lebih hemat tetap fokus.</p>
+              <p className="text-sm text-gray-400 mb-6">Kelas maksimal 5 peserta, lebih hemat dan tetap fokus.</p>
               <div className="bg-surface w-full py-6 rounded-2xl mb-6 px-4">
                 <div className="flex items-baseline justify-center mt-2 gap-1 text-gray-900">
                   <span className="text-2xl font-bold">Rp</span>
