@@ -1,9 +1,9 @@
 export const CONTACT_INFO = {
   // Ganti nomor di sini (Format Teks)
-  phoneDisplay: "+62 813-1548-8000",
+  phoneDisplay: "+62 851-1133-1048",
   
   // Ganti nomor di sini (Format Link WhatsApp: Awali dengan 62 tanpa + atau spasi)
-  waNumber: "6281315488000",
+  waNumber: "6285111331048",
   
   // Pesan default saat orang klik WA
   defaultMessage: "Halo SANUR Akademi Inspirasi, saya tertarik untuk konsultasi program."
