@@ -103,7 +103,7 @@ const Register: React.FC = () => {
   }, [selectedPackage]);
 
   const getWhatsappLink = () => {
-    const text = `Halo, saya tertarik dengan program pelatihan di SANUR Akademi Inspirasi.\n\nMinat Program: *${selectedProgram || 'Belum pilih'}*\nRencana Paket: *${selectedPackage || 'Belum pilih'}*\nEstimasi Biaya: *${price} (Paket 6 Sesi)*\n\nMohon info jadwal konsultasi.`;
+    const text = `Halo, saya tertarik dengan program pelatihan di SANUR Akademi Inspirasi.\n\nMinat Program: *${selectedProgram || 'Belum pilih'}*\nRencana Paket: *${selectedPackage || 'Belum pilih'}*\nEstimasi Biaya: *${price} (Paket 6 Sesi)*\n\nTolong infokan jadwal konsultasi.`;
     return getWaLink(text);
   };
 
