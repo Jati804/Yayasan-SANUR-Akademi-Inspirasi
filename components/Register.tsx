@@ -24,13 +24,13 @@ const steps = [
     icon: <MessageCircle className="w-6 h-6 text-white" />,
     step: "1",
     title: "Konsultasi Awal",
-    desc: "Hubungi admin untuk diskusi detail mengenai kebutuhan, kondisi, dan potensi calon peserta dengan pengajar ahli kami."
+    desc: "Hubungi admin untuk diskusi detail mengenai kebutuhan, kondisi, dan potensi calon peserta dengan pengajar kami."
   },
   {
     icon: <ClipboardCheck className="w-6 h-6 text-white" />,
     step: "2",
     title: "Asesmen",
-    desc: "Kami melakukan asesmen verbal secara singkat untuk penempatan kelas dan merekomendasikan program pelatihan yang paling sesuai."
+    desc: "Kami melakukan asesmen secara offline untuk penempatan kelas dan merekomendasikan program pelatihan yang paling sesuai."
   },
   {
     icon: <Rocket className="w-6 h-6 text-white" />,
@@ -44,7 +44,7 @@ const steps = [
 const faqs = [
   {
     question: "Apakah ada biaya pendaftaran dan bagaimana skema pembayarannya?",
-    answer: "Tidak ada biaya pendaftaran. Biaya pelatihan dikenakan per paket (umumnya 6x pertemuan) yang dibayarkan di awal, setelah program pelatihan disepakati dalam proses konsultasi and asesmen."
+    answer: "Tidak ada biaya pendaftaran. Biaya pelatihan dikenakan per paket (6x pertemuan) yang dibayarkan di awal, setelah program pelatihan disepakati dalam proses konsultasi dan asesmen."
   },
   {
     question: "Berapa lama durasi satu sesi pelatihan?",
