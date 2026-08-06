@@ -274,7 +274,7 @@ const Register: React.FC = () => {
                                 <p className="text-4xl font-black text-gray-900">{price}</p>
                             </div>
                             <p className="text-sm text-gray-500 mb-8 max-w-md mx-auto bg-yellow-50 p-3 rounded-lg border border-yellow-100">
-                                <strong>Catatan:</strong> Tidak ada biaya pendaftaran. Pembayaran dilakukan setelah jadwal disepakati bersama admin.
+                                <strong>Catatan:</strong> Tidak ada biaya pendaftaran. Pembayaran dilakukan setelah proses konsultasi dan asesmen.
                             </p>
                             <a 
                                 href={getWhatsappLink()}
