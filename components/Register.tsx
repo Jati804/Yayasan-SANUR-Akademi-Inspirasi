@@ -36,7 +36,7 @@ const steps = [
     icon: <Rocket className="w-6 h-6 text-white" />,
     step: "3",
     title: "Mulai Pelatihan",
-    desc: "Setelah program disepakati, lakukan pendaftaran resmi dan peserta siap memulai sesi pelatihan sesuai jadwal yang disepakati."
+    desc: "Setelah selesai asesmen dan pembayaran, peserta dapat memulai sesi pelatihan sesuai dengan jadwal yang disepakati."
   }
 ];
 
