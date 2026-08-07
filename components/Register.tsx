@@ -44,7 +44,7 @@ const steps = [
 const faqs = [
   {
     question: "Apakah ada biaya pendaftaran dan bagaimana skema pembayarannya?",
-    answer: "Tidak ada biaya pendaftaran. Biaya pelatihan dikenakan per paket (6x pertemuan) yang dibayarkan di awal, setelah program pelatihan disepakati dalam proses konsultasi dan asesmen."
+    answer: "Tidak ada biaya pendaftaran. Pembayaran pelatihan dilakukan secara sekaligus per paket (6x pertemuan) setelah proses konsultasi dan asesmen selesai."
   },
   {
     question: "Berapa lama durasi satu sesi pelatihan?",
