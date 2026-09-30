@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
               Lembaga Kursus &amp; Pelatihan Inklusif
             </span>
 
-            <h1 className="text-[2.25rem] sm:text-6xl lg:text-[3.5rem] xl:text-[4.5rem] 2xl:text-[5rem] font-black text-primary leading-[1.3] lg:leading-[1.05] tracking-tighter mb-6">
+            <h1 className="text-[clamp(3rem,15vw,4.5rem)] sm:text-7xl lg:text-[3.5rem] xl:text-[4.5rem] 2xl:text-[5rem] font-black text-primary leading-[1.2] lg:leading-[1.05] tracking-tighter mb-6">
               <span className="block">
                 <span className="block lg:inline">SANUR</span>{' '}
                 <span className="block lg:inline">AKADEMI</span>
