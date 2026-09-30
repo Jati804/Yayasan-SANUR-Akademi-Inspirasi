@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Cast motion component to any to bypass environment-specific type merging issues
@@ -29,18 +29,17 @@ const Hero: React.FC = () => {
   return (
     <section
       id="beranda"
-      className="relative bg-surface overflow-hidden pt-28 lg:pt-[6.5rem] flex items-end"
+      className="relative bg-surface overflow-hidden pt-28 lg:pt-[7.5rem] flex items-end"
     >
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-[1.15fr_1fr] gap-8 lg:gap-4 items-end">
           {/* Teks: statis, langsung terbaca saat halaman dibuka */}
           <div className="self-center pb-6 lg:pb-20 lg:pl-5 text-center lg:text-left">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-100 shadow-sm text-[11px] md:text-xs font-black text-primary uppercase tracking-[0.15em] mb-7 md:mb-8">
-              <Star className="w-4 h-4 fill-secondary text-secondary" aria-hidden="true" />
-              <span>Lembaga Kursus &amp; Pelatihan Inklusif</span>
+            <span className="inline-flex items-center px-5 py-2 rounded-full bg-white border border-gray-100 shadow-sm text-[11px] md:text-xs font-black text-primary uppercase tracking-[0.15em] mb-7 md:mb-8">
+              Lembaga Kursus &amp; Pelatihan Inklusif
             </span>
 
-            <h1 className="text-[2.25rem] sm:text-6xl lg:text-[3.5rem] xl:text-[4.5rem] 2xl:text-[5rem] font-black text-primary leading-[1.15] lg:leading-[1.05] tracking-tighter mb-6">
+            <h1 className="text-[2.25rem] sm:text-6xl lg:text-[3.5rem] xl:text-[4.5rem] 2xl:text-[5rem] font-black text-primary leading-[1.3] lg:leading-[1.05] tracking-tighter mb-6">
               <span className="block">SANUR AKADEMI</span>
               <span className="block">INSPIRASI</span>
             </h1>
