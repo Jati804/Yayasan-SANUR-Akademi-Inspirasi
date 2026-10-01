@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
               aria-hidden="true"
               width={865}
               height={510}
-              className="block w-full max-w-[520px] sm:max-w-[600px] lg:max-w-none h-auto"
+              className="block w-full max-w-[520px] sm:max-w-[600px] lg:max-w-none h-auto lg:scale-[1.3] lg:origin-bottom-right lg:pointer-events-none"
             />
           </MotionDiv>
         </div>
