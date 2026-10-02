@@ -1,22 +1,12 @@
-import { useState } from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
+import { useReducedMotion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-// Cast motion component to any to bypass environment-specific type merging issues
-const MotionDiv = motion.div as any;
 
 const focusRing =
   'focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/40 focus-visible:ring-offset-2';
 
 const Hero: React.FC = () => {
   const reduceMotion = useReducedMotion();
-
-  // Animasi masuk hanya di landscape (lg ke atas); di portrait ilustrasi langsung tampil
-  const [isDesktop] = useState(
-    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches
-  );
-  const animateIn = isDesktop && !reduceMotion;
 
   const scrollToDaftar = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -70,13 +60,8 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Ilustrasi: -mb-px menutup celah subpiksel ke pita statistik di bawahnya */}
-          <MotionDiv
-            initial={animateIn ? { opacity: 0, y: 24 } : false}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="flex justify-center lg:justify-end -mb-px"
-          >
+          {/* Ilustrasi: statis tanpa animasi; -mb-px menutup celah subpiksel ke pita statistik di bawahnya */}
+          <div className="flex justify-center lg:justify-end -mb-px">
             <img
               src="/hero-illustration.svg"
               alt=""
@@ -85,7 +70,7 @@ const Hero: React.FC = () => {
               height={510}
               className="block w-full max-w-[520px] sm:max-w-[600px] lg:max-w-none h-auto lg:scale-[1.3] lg:origin-bottom-right lg:pointer-events-none"
             />
-          </MotionDiv>
+          </div>
         </div>
       </div>
     </section>
