@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -5,8 +6,6 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  // false saat halaman baru dibuka: semua transisi navbar ditahan dulu supaya tidak ada efek "membesar" di awal
-  const [ready, setReady] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -15,23 +14,6 @@ const Navbar: React.FC = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Aktifkan transisi (hover, klik menu, dll) hanya setelah halaman selesai dimuat
-  useEffect(() => {
-    let timer: number | undefined;
-    const enable = () => {
-      timer = window.setTimeout(() => setReady(true), 200);
-    };
-    if (document.readyState === 'complete') {
-      enable();
-    } else {
-      window.addEventListener('load', enable, { once: true });
-    }
-    return () => {
-      window.removeEventListener('load', enable);
-      if (timer !== undefined) window.clearTimeout(timer);
-    };
   }, []);
 
   const isActive = (path: string) => location.pathname === path;
@@ -45,11 +27,10 @@ const Navbar: React.FC = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-3.5 ${ready ? '' : 'nav-preload'} ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out py-3.5 ${
         scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-white border-b border-gray-100'
       }`}
     >
-      {!ready && <style>{'.nav-preload, .nav-preload * { transition: none !important; }'}</style>}
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         {/* Logo Area */}
         <div className="flex items-center">
