@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
               <a
                 href="#daftar"
                 onClick={scrollToDaftar}
-                className={`px-8 py-4 md:px-10 md:py-5 bg-primary hover:bg-primary-dark text-white rounded-2xl font-black text-lg md:text-xl shadow-xl shadow-primary/20 transition-all motion-safe:hover:-translate-y-1 motion-safe:active:scale-95 flex items-center justify-center gap-3 ${focusRing}`}
+                className={`px-8 py-4 md:px-10 md:py-5 bg-primary hover:bg-primary-dark text-white rounded-2xl font-black text-lg md:text-xl shadow-xl shadow-primary/20 flex items-center justify-center gap-3 ${focusRing}`}
               >
                 Konsultasi
                 <ArrowRight className="w-5 h-5 md:w-6 md:h-6" aria-hidden="true" />
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
 
               <Link
                 to="/program"
-                className={`px-8 py-4 md:px-10 md:py-5 bg-white hover:bg-gray-50 text-gray-700 border-2 border-gray-200 rounded-2xl font-black text-lg md:text-xl transition-all motion-safe:hover:-translate-y-1 motion-safe:active:scale-95 flex items-center justify-center ${focusRing}`}
+                className={`px-8 py-4 md:px-10 md:py-5 bg-white hover:bg-gray-50 text-gray-700 border-2 border-gray-200 rounded-2xl font-black text-lg md:text-xl flex items-center justify-center ${focusRing}`}
               >
                 Lihat Program
               </Link>
