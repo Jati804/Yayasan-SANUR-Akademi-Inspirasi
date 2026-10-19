@@ -87,8 +87,7 @@ const About: React.FC = () => {
             <ul className="space-y-6">
               {[
                 "Memberikan kurikulum yang relevan dan praktis untuk kebutuhan pasar kerja.",
-                "Menyediakan akses informasi yang mendukung peserta dalam merencanakan karir setelah pelatihan.",
-                "Melakukan pendampingan psikososial dan pengembangan diri yang berkelanjutan."
+                "Menyediakan akses informasi yang mendukung peserta dalam merencanakan karir setelah pelatihan."
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-4">
                   <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
